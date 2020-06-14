@@ -68,10 +68,11 @@ function placeOrder(cardNumber) {
 
   if (cardNumber >= 0) {
     var messageForCard = `Your total cost is $${total()}, which will be charged to the card ${cardNumber}.`
-    for (var i = 0; i < cart.length; i++) {
+    cart = [];
+    /*for (var i = 0; i < cart.length; i++) {
       delete cart[i].itemName;
       delete cart[i].itemPrice;
-    }
+    }*/
     return(messageForCard)
     //cart = [{}];
   } else {
