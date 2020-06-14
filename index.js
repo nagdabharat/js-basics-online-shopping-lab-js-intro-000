@@ -67,8 +67,7 @@ function placeOrder(cardNumber) {
   // write your code here
   if (cardNumber >= 0) {
     return(`Your total cost is $${total()}, which will be charged to the card ${cardNumber}.`)
-    while(cart.length > 0) {
-      delete cart[cart.length-1].itenName;
+    cart.length = 0;
     }
     //cart = [{}];
   } else {
