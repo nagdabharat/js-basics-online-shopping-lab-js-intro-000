@@ -71,7 +71,7 @@ function placeOrder(cardNumber) {
   } else {
     return("Sorry, we don't have a credit card on file for you.")
   }
-  for (var i = 0; i < array.length; i++) {
+  for (var i = 0; i < cart.length; i++) {
     delete cart[i].itemName;
     delete cart[i].itemPrice;
   }
